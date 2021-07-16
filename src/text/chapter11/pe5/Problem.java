@@ -19,9 +19,9 @@ public class Problem {
         math.addStudent("Joe");
         System.out.println(math);
 
-        System.out.println(math.getCourseName());
+        System.out.println("Course name is: " + math.getCourseName());
 
-        System.out.println(math.getNumberOfStudents());
+        System.out.println("Total students: " + math.getNumberOfStudents());
 
         math.dropStudent(bob);
         System.out.println(math);

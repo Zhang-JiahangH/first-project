@@ -36,7 +36,7 @@ public class Course {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Course: ");
         stringBuilder.append(courseName);
-        stringBuilder.append( "students[ ");
+        stringBuilder.append( " - Students[ ");
         for (String student : students) {
             stringBuilder.append(student);
             stringBuilder.append(" ");
