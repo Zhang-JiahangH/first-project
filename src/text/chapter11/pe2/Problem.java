@@ -1,4 +1,4 @@
-package text.chapter11.pa2;
+package text.chapter11.pe2;
 
 public class Problem {
 

@@ -1,4 +1,4 @@
-package text.chapter11.pa5;
+package text.chapter11.pe5;
 
 import java.util.ArrayList;
 import java.util.List;
