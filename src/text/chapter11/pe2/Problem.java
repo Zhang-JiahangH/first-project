@@ -9,6 +9,18 @@ public class Problem {
      A faculty member has a rank. A staff member has a title. Override the toString method in each class to display the class name and the person’s name.
      */
     public static void main(String[] args) {
+        // test of constructor //
+        Person person = new Person("Harry");
+        Person student = new Student("Lucy",2);
+        MyDate mydate = new MyDate(7,25,2002);
+        Person employee = new Employee("Carlos","Health Center", "10000", mydate);
+        Person faculty = new Faculty("Jason","10:00 - 12:00", "1");
+        Person staff = new Staff("Jack","Dean");
 
+        System.out.println(person.toString());
+        System.out.println(student.toString());
+        System.out.println(employee.toString());
+        System.out.println(faculty.toString());
+        System.out.println(staff.toString());
     }
 }
