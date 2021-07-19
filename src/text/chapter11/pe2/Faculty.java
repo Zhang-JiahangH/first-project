@@ -1,6 +1,8 @@
 package text.chapter11.pe2;
 
 public class Faculty extends Employee{
+
+    // TODO should this be public? Look up "data encapsulation"
     public String officeHours, rank;
 
     // constructor //
@@ -39,6 +41,7 @@ public class Faculty extends Employee{
     }
 
     // override //
+    // TODO you are duplicating code here and in Employee. Since both these methods are the same how can we refactor this?
     public String toString() {
         return "Name: " + getName() + " Class: Faculty";
     }
