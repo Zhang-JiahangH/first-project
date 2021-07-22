@@ -13,7 +13,7 @@ public class Problem {
         // TODO very good test code showing usage
         // test of constructor //
         Person person = new Person("Harry");
-        Person student = new Student("Lucy",2);
+        Person student = new Student("Lucy", Student.classStatus.FRESHMAN);
         MyDate mydate = new MyDate(7,25,2002);
         Person employee = new Employee("Carlos","Health Center", "10000", mydate);
         Person faculty = new Faculty("Jason","10:00 - 12:00", "1");

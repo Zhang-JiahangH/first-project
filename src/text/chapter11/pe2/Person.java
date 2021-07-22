@@ -2,10 +2,10 @@ package text.chapter11.pe2;
 
 public class Person {
 
-    public String name;
-    public String address;
-    public String phoneNumber;
-    public String email;
+    private String name;
+    private String address;
+    private String phoneNumber;
+    private String email;
 
     // constructor //
     public Person(){
@@ -52,5 +52,9 @@ public class Person {
 
     public void setEmail(String inputEmail){
         this.email = inputEmail;
+    }
+
+    public String toString(){
+        return "Name: " + getName() + " Class: " + this.getClass().getSimpleName();
     }
 }

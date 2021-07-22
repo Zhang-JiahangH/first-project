@@ -6,9 +6,6 @@ public class Problem {
 
     /*
      11.4 (Maximum element in ArrayList) Write the following method that returns the maximum value in an ArrayList of integers.
-
-     // TODO your method does do this (below), in the context of this problem it's not a big deal but in the future
-     // TODO for your class assignments / work it is important to follow it exactly
      The method returns null if the list is null or the list size is 0.
 
      public static Integer max(ArrayList<Integer> list)
@@ -32,26 +29,19 @@ public class Problem {
     }
 
     // function //
-    public static int max(ArrayList<Integer> list){
-
-        // TODO do we really need this variable?
-        int len = list.size();
-
-        // TODO how can we simplify this code? are you sure you need both if and else?
-        int max;
-        if(len == 0){
-            return -1;
+    public static Integer max(ArrayList<Integer> list){
+        if(list == null){
+            return null;
         }
-        else{
-            max = list.get(0);
+        if(list.size()==0){
+            return null;
         }
 
-        // TODO can you simplify this with the Math.max() method?
+        int maximum = list.get(0);
+
         for(int temp:list){
-            if(temp > max){
-                max = temp;
-            }
+            maximum = Math.max(maximum, temp);
         }
-        return max;
+        return maximum;
     }
 }

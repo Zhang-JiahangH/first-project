@@ -2,9 +2,8 @@ package text.chapter11.pe2;
 
 public class Employee extends Person{
 
-    // TODO should this be public? Look up "data encapsulation"
-    public String office, salary;
-    public MyDate hireDate;
+    private String office, salary;
+    private MyDate hireDate;
 
     // constructor //
     public Employee(){
@@ -47,11 +46,5 @@ public class Employee extends Person{
     }
     public void setHireDate(MyDate d){
         this.hireDate = d;
-    }
-
-    // toString //
-    // TODO you are duplicating code
-    public String toString() {
-        return "Name: " + getName() + " Class: Employee";
     }
 }

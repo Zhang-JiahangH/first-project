@@ -2,8 +2,7 @@ package text.chapter11.pe2;
 
 public class Staff extends Employee{
 
-    // TODO should this be public? Look up "data encapsulation"
-    public String title;
+    private String title;
 
     // constructor //
     public Staff(){
@@ -30,10 +29,5 @@ public class Staff extends Employee{
     }
     public void setTitle(String t){
         this.title = t;
-    }
-
-    // toString //
-    public String toString() {
-        return "Name: " + getName() + " Class: Staff";
     }
 }
