@@ -10,7 +10,6 @@ public class Problem {
      */
     public static void main(String[] args) {
 
-        // TODO very good test code showing usage
         // test of constructor //
         Person person = new Person("Harry");
         Person student = new Student("Lucy", Student.classStatus.FRESHMAN);

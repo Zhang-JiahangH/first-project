@@ -2,7 +2,6 @@ package text.chapter11.pe2;
 
 public class Student extends Person{
 
-    // TODO when project get bigger this should be in it's own enum class, but for the scope of this assignment this is fine
     // Define the status as a constant //
     enum classStatus{
         FRESHMAN, SOPHOMORE, JUNIOR, SENIOR;
