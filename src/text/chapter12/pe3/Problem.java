@@ -28,6 +28,8 @@ public class Problem {
 
     }
     // create an array with 100 randomly chosen integers
+    // TODO it is generally better to write methods that are more usable, can you rewrite this such that,
+    // TODO the length of the array and the bounds of the random numbers that fill it are arguments?
     public static int[] createArray(){
         int[] out = new int[100];
         for(int i=0; i<100; i++){
