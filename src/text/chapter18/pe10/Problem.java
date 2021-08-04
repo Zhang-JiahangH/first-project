@@ -10,9 +10,20 @@ public class Problem {
      For example, count("Welcome", 'e') returns 2.
      */
     public static void main(String[] args) {
+        String input = "Hello World!";
+        int output = count(input,'l');
+        System.out.println(output);
     }
 
     public static int count(String str, char a){
-        return 0;
+        char[] input = str.toCharArray();
+        int len = input.length;
+        int output = 0;
+        for(int i=0; i<len; i++){
+            if(input[i] == a){
+                output ++;
+            }
+        }
+        return output;
     }
 }

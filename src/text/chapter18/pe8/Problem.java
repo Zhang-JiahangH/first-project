@@ -1,4 +1,5 @@
 package text.chapter18.pe8;
+import java.util.Scanner;
 
 public class Problem {
 
@@ -12,9 +13,19 @@ public class Problem {
      to save you time.
      */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an integer: ");
+        int value = input.nextInt();
+        reverseDisplay(value);
     }
 
     public static void reverseDisplay(int value){
-
+        int output = 0;
+        while(value>0){
+            int temp = value % 10;
+            value/=10;
+            output = output*10 + temp;
+        }
+        System.out.println("Reversed number is "+output);
     }
 }
