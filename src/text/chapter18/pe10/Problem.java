@@ -15,6 +15,7 @@ public class Problem {
         System.out.println(output);
     }
 
+    // TODO while this does produce the correct output, this method is not recursive
     public static int count(String str, char a){
         char[] input = str.toCharArray();
         int len = input.length;
