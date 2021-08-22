@@ -14,8 +14,9 @@ public class Problem {
      */
     public static void main(String[] args) {
 
-        // TODO changed from arraylist to List
-        List<Integer> list = new ArrayList<>();
+        // TODO do you know why it would be better to do "List<Integer> list = new ArrayList<>();" ?
+        // TODO what changes do you also have to make to "max(ArrayList<Integer> list){" for this to work?
+        ArrayList<Integer> list = new ArrayList<>();
         Scanner input = new Scanner(System.in);
         int value;
 
