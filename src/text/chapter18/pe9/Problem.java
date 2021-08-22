@@ -18,11 +18,12 @@ public class Problem {
 
     public static void reverseDisplay(String value){
         int len = value.length();
-        char[] output = new char[len];
-        for(int i=len-1; i>=0; i--){
-            output[len-i-1] = value.charAt(i);
+        if(len!=0){
+            System.out.print(value.charAt(len-1));
+            value = value.substring(0,len-1);
+            if(value.length()!=0){
+                reverseDisplay(value);
+            }
         }
-        String out = new String(output);
-        System.out.println(out);
     }
 }

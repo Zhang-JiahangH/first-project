@@ -21,11 +21,12 @@ public class Problem {
 
     public static void reverseDisplay(int value){
         int output = 0;
-        while(value>0){
-            int temp = value % 10;
-            value/=10;
-            output = output*10 + temp;
+        int temp = value % 10;
+        value/=10;
+        output = output*10 + temp;
+        System.out.print(output);
+        if(value>0){
+            reverseDisplay(value);
         }
-        System.out.println("Reversed number is "+output);
     }
 }

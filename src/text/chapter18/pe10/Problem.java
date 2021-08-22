@@ -11,19 +11,20 @@ public class Problem {
      */
     public static void main(String[] args) {
         String input = "Hello World!";
-        int output = count(input,'l');
+        int output = count(input,'H');
         System.out.println(output);
     }
 
     public static int count(String str, char a){
-        char[] input = str.toCharArray();
-        int len = input.length;
-        int output = 0;
-        for(int i=0; i<len; i++){
-            if(input[i] == a){
-                output ++;
-            }
+        int num = 0;
+        int index = str.indexOf(a);
+        if(index!=-1){
+            str = str.substring(0,index) + str.substring(index+1);
+            num++;
         }
-        return output;
+        if(str.indexOf(a)!=-1){
+            num+=count(str,a);
+        }
+        return num;
     }
 }
