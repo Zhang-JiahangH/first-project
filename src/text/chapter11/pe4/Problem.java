@@ -1,6 +1,5 @@
 package text.chapter11.pe4;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Problem {
@@ -31,7 +30,7 @@ public class Problem {
     }
 
     // function //
-    public static Integer max(List<Integer> list){
+    public static Integer max(ArrayList<Integer> list){
         if(list == null){
             return null;
         }
