@@ -19,6 +19,7 @@ public class Problem {
         reverseDisplay(value);
     }
 
+    // TODO while this does produce the correct output, this method is not recursive
     public static void reverseDisplay(int value){
         int output = 0;
         int temp = value % 10;
