@@ -13,7 +13,7 @@ public class Problem {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter an string: ");
         String value = input.nextLine();
-        reverseDisplay(value);
+        reverseDisplay2(value);
     }
 
     public static void reverseDisplay(String value){
@@ -25,5 +25,18 @@ public class Problem {
                 reverseDisplay(value);
             }
         }
+    }
+
+    public static void reverseDisplay2(String value){
+        reverseDisplay2Helper(value, value.length()-1);
+    }
+
+    // Though you cannot change the method signature that is given, you can easily create another "helper" method
+    public static void reverseDisplay2Helper(String value, int pos){
+        if(pos < 0 ){
+            return;
+        }
+        System.out.print(value.charAt(pos));
+        reverseDisplay2Helper(value, pos-1);
     }
 }

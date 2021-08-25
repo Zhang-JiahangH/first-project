@@ -15,7 +15,8 @@ public class Problem {
         System.out.println(output);
     }
 
-    // TODO while this does produce the correct output, this method is not recursive
+    // TODO the substring method is very inefficient, for that reason and others including better code quality I'm suggesting you rewrite this
+    // TODO please see example in pe9
     public static int count(String str, char a){
         int num = 0;
         int index = str.indexOf(a);
