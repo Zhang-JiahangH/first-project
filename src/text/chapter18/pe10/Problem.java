@@ -11,22 +11,18 @@ public class Problem {
      */
     public static void main(String[] args) {
         String input = "Hello World!";
-        int output = count(input,'H');
+        int output = count(input,'l');
         System.out.println(output);
     }
 
-    // TODO the substring method is very inefficient, for that reason and others including better code quality I'm suggesting you rewrite this
-    // TODO please see example in pe9
     public static int count(String str, char a){
         int num = 0;
         int index = str.indexOf(a);
-        if(index!=-1){
-            str = str.substring(0,index) + str.substring(index+1);
-            num++;
+        if(index==-1){
+            return num;
         }
-        if(str.indexOf(a)!=-1){
-            num+=count(str,a);
+        else{
+            return num = 1+ count(str.substring(index+1), a);
         }
-        return num;
     }
 }
