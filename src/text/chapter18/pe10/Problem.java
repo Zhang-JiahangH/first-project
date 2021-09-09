@@ -11,7 +11,7 @@ public class Problem {
      */
     public static void main(String[] args) {
         String input = "Hello World!";
-        int output = count(input,'l');
+        int output = countAnswer(input,'l');
         System.out.println(output);
     }
 
@@ -24,5 +24,17 @@ public class Problem {
         else{
             return num = 1+ count(str.substring(index+1), a);
         }
+    }
+
+    public static int countAnswer(String str, char a){
+        return countAnswerHelper(str.toLowerCase(), a, 0);
+    }
+
+    public static int countAnswerHelper(String str, char a, int i){
+        if( i >= str.length() ){
+            return 0;
+        }
+        int add = str.charAt(i) == a ? 1 : 0;
+        return countAnswerHelper(str, a, i + 1) + add;
     }
 }
